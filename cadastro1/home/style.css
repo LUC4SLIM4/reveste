@@ -1,0 +1,25 @@
+footer {
+  background-color: rgb(44, 44, 44);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+footer .container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+}
+
+footer .col-sm-12 {
+  flex: 1 1 auto;
+}
+
+footer .social-media {
+  list-style: none;
+  padding: 0;
+}
