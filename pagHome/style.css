@@ -5,7 +5,7 @@ footer {
   text-align: center;
 }
 
-footer .container {
+footer .conteiner {
   width: 960px;
   margin: 0 auto;
 }
@@ -23,4 +23,3 @@ footer .social-media {
   list-style: none;
   padding: 0;
 }
-
