@@ -52,3 +52,14 @@
     width: 450px;
     height: 450px;
 }
+.cabeçalho{
+    flex-direction: row;
+}
+.carrin img{
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+.carrin{
+    float: left;
+}
