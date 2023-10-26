@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
-    <link rel="stylesheet" href="/pagHome/style2.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>RevesteMais Tintas</title>
-  </head>
-  <body>
-    <!--Cabeçalho pausado-->
-    <!--<nav class="navbar col-12 navbar-expand-lg " style="z-index: 999; background-color: #ffffff;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+  <link rel="stylesheet" href="/pagHome/style2.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>RevesteMais Tintas</title>
+</head>
+
+<body>
+  <!--Cabeçalho pausado-->
+  <!--<nav class="navbar col-12 navbar-expand-lg " style="z-index: 999; background-color: #ffffff;">
         <div class="container-fluid col-11 m-auto">
             <img src="img/logo/logo-reveste__1_-removebg-preview.png" alt="" width="80" height="49" class="d-inline-block align-text-top">
           <a class="navbar-brand" href="#" style="color: #345C72;">     Navbar</a>
@@ -45,302 +48,328 @@
           </div>
         </div>
     </nav>-->
-    
-    <!--Cabeçalho-->
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
-          <li class="nav-item">
-            <button type="button" class="login btn btn-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container forms">
-                      <div class="container forms">
-                        <!-- Formulário de Login -->
-                        <div class="form login">
-                          <div class="form-content">
-                              <header class="mb-3">Login</header>
-                              <form>
-                                    <div class="mb-3">
-                                        <label for="loginEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
-                                    </div>
-                
-                                    <div class="mb-3">
-                                        <label for="loginPassword" class="form-label">Senha</label>
-                                        <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
-                                        <i class='bx bx-hide eye-icon'></i>
-                                    </div>
-                
-                                    <div class="mb-3 form-link">
-                                        <a href="#" class="forgot-pass">Esqueceu a senha</a>
-                                    </div>
-                                    
-                                    <div class="text-center">
-                                      <button type="submit" class="btn btn-primary">Login</button>
-                                  
-                                    </div>
-                                  
-                                <div class="form-link mt-3">
-                                    <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
-                                </div>
-                            </div>
-                
-                            <div class="line"></div>
-                
-                            <div class="media-options">
-                              <a href="#" class="btn btn-facebook">
-                                  <i class='bx bxl-facebook facebook-icon'></i>
-                                  <span>Entrar com Facebook</span>
-                              </a>
-                          </div>
-                
-                          <div class="media-options">
-                            <a href="#" class="btn btn-google">
-                                <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
-                                <span>Entrar com o Google</span>
-                            </a>
-                        </div>
-                    </form>
+
+  <!--Cabeçalho-->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+        <li class="nav-item">
+          <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                
-                        <!-- Formulário de Cadastro -->
-                        <div class="form signup">
-                            <div class="form signup">
-                  <div class="form-content">
-                      <header>Cadastrar</header>
-                      <form action="#">
-                          <div class="field input-field">
-                              <input type="email" placeholder="Email" class="input">
-                          </div>
+                <div class="modal-body">
+                  <div class="container forms">
+                    <div class="container forms">
+                      <!-- Formulário de Login -->
+                      <div class="form login">
+                        <div class="form-content">
+                          <header class="mb-3">Login</header>
+                          <form>
+                            <div class="mb-3">
+                              <label for="loginEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
+                            </div>
 
-                          <div class="field input-field">
-                              <input type="password" placeholder="Create password" class="password">
-                          </div>
+                            <div class="mb-3">
+                              <label for="loginPassword" class="form-label">Senha</label>
+                              <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Digite sua senha">
+                              
+                            </div>
 
-                          <div class="field input-field">
-                              <input type="password" placeholder="Confirm password" class="password">
-                              <i class='bx bx-hide eye-icon'></i>
-                          </div>
+                            <div class="mb-3 form-link">
+                              <a href="#" class="forgot-pass">Esqueceu a senha</a>
+                            </div>
 
-                          <div class="field button-field">
-                              <button>Cadastrar</button>
-                          </div>
-                      </form>
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-primary">Login</button>
 
-                      <div class="form-link">
-                          <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
-                      </div>
-                  </div>
+                            </div>
 
-                  <div class="line"></div>
-
-                  <div class="media-options">
-                      <a href="#" class="field facebook">
-                          <i class='bx bxl-facebook facebook-icon'></i>
-                          <span>Entrar com o Facebook</span>
-                      </a>
-                  </div>
-
-                  <div class="media-options">
-                      <a href="#" class="field google">
-                          <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
-                          <span>Entrar com o Google</span>
-                      </a>
-                  </div>
-
-              </div>
+                            <div class="form-link mt-3">
+                              <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                            </div>
                         </div>
-                      
-                        
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #ffffff;">Carrinho</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">
-              Coleções
-            </a>  
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/pagProdutos/index.html">Tintas</a></li>
-              <li><a class="dropdown-item" href="#">Revestimentos</a></li>
-              <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
-            </ul>
-          </li>
-        </ul>
+
+                        <div class="line"></div>
+
+                        <div class="media-options">
+                          <a href="#" class="btn btn-facebook">
+                            <i class='bx bxl-facebook facebook-icon'></i>
+                            <span>Entrar com Facebook</span>
+                          </a>
+                        </div>
+
+                        <div class="media-options">
+                          <a href="#" class="btn btn-google">
+                            <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                            <span>Entrar com o Google</span>
+                          </a>
+                        </div>
+                        </form>
+                      </div>
+
+                      <!-- Formulário de Cadastro -->
+                      <div class="form signup">
+                        <div class="form signup">
+                          <div class="form-content">
+                            <header>Cadastrar</header>
+                            <form action="#">
+                              <div class="field input-field">
+                                <input type="email" placeholder="Email" class="input">
+                              </div>
+
+                              <div class="field input-field">
+                                <input type="password" placeholder="Create password" class="password">
+                              </div>
+
+                              <div class="field input-field">
+                                <input type="password" placeholder="Confirm password" class="password">
+                                
+                              </div>
+
+                              <div class="field button-field">
+                                <button>Cadastrar</button>
+                              </div>
+                            </form>
+
+                            <div class="form-link">
+                              <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                            </div>
+                          </div>
+
+                          <div class="line"></div>
+
+                          <div class="media-options">
+                            <a href="#" class="field facebook">
+                              <i class='bx bxl-facebook facebook-icon'></i>
+                              <span>Entrar com o Facebook</span>
+                            </a>
+                          </div>
+
+                          <div class="media-options">
+                            <a href="#" class="field google">
+                              <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                              <span>Entrar com o Google</span>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+
+
+        <li class="nav-itemdropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: #ffffff;">
+            Coleções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/pagProdutos/index.html">Tintas</a></li>
+            <li><a class="dropdown-item" href="#">Revestimentos</a></li>
+            <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <li class="nav-item">
+        <a href="" class="nav-link-classe-especifica text-white">
+          <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+        </a>
+      </li>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Oque você procura?" aria-label="Oque você procura?">
+        <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+      </form>
+
+
+    </div>
+
+  </nav>
+
+  <br>
+  <div style="text-align: center; font-family: 'Courier New', Courier, monospace;">
+    <h1>Reveste Mais Tintas</h1>
+  </div>
+  <br>
+
+
+  <!--Carrosel-->
+  <div id="carouselExampleIndicators" class="carousel slide col-10 m-auto" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carrosel/MELHORES PREÇOS.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrosel/TRANSFORME marelo.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrosel/TRANSFORME.png" class="d-block w-100" alt="...">
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Oque você procura?" aria-label="Oque você procura?">
-            <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
-          </form>
-        </div>
-    </nav>
+  </div>
 
-    <br>
-    <div style="text-align: center; font-family: 'Courier New', Courier, monospace;">
-        <h1>Reveste Mais Tintas</h1>
-    </div>
-    <br>
+  <br><br>
 
-    
-    <!--Carrosel-->
-    <div id="carouselExampleIndicators" class="carousel slide col-10 m-auto" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrosel/MELHORES PREÇOS.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrosel/TRANSFORME marelo.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrosel/TRANSFORME.png" class="d-block w-100" alt="...">
-          </div>
+  <!--Cards categorias-->
+  <div class="row row-cols-1 row-cols-md-4 g-4 col-11 m-auto" style="max-width: 900px">
+    <div class="col">
+      <div class="card">
+        <img src="img/cards/Design sem nome tro.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mais Vendidos</h5>
+          <p class="card-text">This blabla is a longer card with supporting text below as a natural lead-in to
+            additional content. This content is a little bit longer.</p>
         </div>
       </div>
-    
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/cards/Design sem nome.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tintas</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/cards/Design sem nome (1).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Materiais para Pintura</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/cards/Design sem nome (2).png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Revestimentos</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+  <hr class="mt-3">
+  <br><br>
+
+  <!--Card comprido-->
+  <div class="card mb-3 col-11 m-auto">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+        This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+  <!--Card conteúdo-->
+  <div class="card mb-3 col-11 m-auto" style="max-width: 1100px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/cards/Design sem nome (3).png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
     <br><br>
-
-    <!--Cards categorias-->
-    <div class="row row-cols-1 row-cols-md-4 g-4 col-11 m-auto" style="max-width: 900px">
-        <div class="col"> 
-          <div class="card">
-            <img src="img/cards/Design sem nome tro.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Mais Vendidos</h5>
-              <p class="card-text">This blabla is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/cards/Design sem nome.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Tintas</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/cards/Design sem nome (1).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Materiais para Pintura</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/cards/Design sem nome (2).png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Revestimentos</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="img/cards/Design sem nome (3).png" class="img-fluid rounded-start" alt="...">
       </div>
-
-    <br><br>
-    <hr class="mt-3">
-    <br><br>
-
-    <!--Card comprido-->
-    <div class="card mb-3 col-11 m-auto">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
     </div>
+  </div>
 
-    <br><br><br><br>
+  <br><br><br><br>
 
-    <!--Card conteúdo-->
-    <div class="card mb-3 col-11 m-auto" style="max-width: 1100px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/cards/Design sem nome (3).png" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
-        <br><br>
-        <div class="row g-0">
-            <div class="col-md-4">
-              <img src="img/cards/Design sem nome (3).png" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-      </div>
-    
-    <br><br><br><br>
 
-    
 
-    <!--redes sociais-->
-    <div class="m-auto" style="text-align: center; font-family:'Courier New', Courier, monospace;">
-        <p>Siga a Reveste Mais</p>
-        <div>
-            <a href="https://wa.me/message/IAF3XRJBKWY3P1" target="_blank"><img src="img/redes/whatsapp.png" alt="wpp" style="max-width: 50px"></a>
-            <a href="https://www.facebook.com/revestemaistintas" target="_blank"><img src="img/redes/facebook.png" alt="face" style="max-width: 50px"></a>
-            <a href="https://www.instagram.com/revestemaistintas/" target="_blank"><img src="img/redes/instagram.png" alt="inst" style="max-width: 50px"></a>
-        </div>
+  <!--redes sociais-->
+  <div class="m-auto" style="text-align: center; font-family:'Courier New', Courier, monospace;">
+    <p>Siga a Reveste Mais</p>
+    <div>
+      <a href="https://wa.me/message/IAF3XRJBKWY3P1" target="_blank"><img src="img/redes/whatsapp.png" alt="wpp"
+          style="max-width: 50px"></a>
+      <a href="https://www.facebook.com/revestemaistintas" target="_blank"><img src="img/redes/facebook.png" alt="face"
+          style="max-width: 50px"></a>
+      <a href="https://www.instagram.com/revestemaistintas/" target="_blank"><img src="img/redes/instagram.png"
+          alt="inst" style="max-width: 50px"></a>
     </div>
-    <br>
+  </div>
+  <br>
 
-    <!--rodapé-->
-    <footer>
-        <div class="conteiner">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <p>Copyright &copy; 2023</p>
-            </div>
-          </div>
+  <!--rodapé-->
+  <footer>
+    <div class="conteiner">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>Copyright &copy; 2023</p>
         </div>
-      </footer>
-      <script>
-              // Função para abrir o pop-up de login
-              function openPopup() {
-          openLoginPopup();
-        }
-        
-        // Função para abrir o pop-up de login
-        function openLoginPopup() {
-          const popupContainer = document.createElement('div');
-          popupContainer.classList.add('popup-container');
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Função para abrir o pop-up de login
+    function openPopup() {
+      openLoginPopup();
+    }
 
-          const popupContent = document.createElement('div');
-          popupContent.classList.add('popup-content');
-          popupContent.innerHTML = `
+    // Função para abrir o pop-up de login
+    function openLoginPopup() {
+      const popupContainer = document.createElement('div');
+      popupContainer.classList.add('popup-container');
+
+      const popupContent = document.createElement('div');
+      popupContent.classList.add('popup-content');
+      popupContent.innerHTML = `
             <h2>Login</h2>
             <form>
               <input type="text" placeholder="Usuário" required>
@@ -350,63 +379,66 @@
             <button class="popup-close" onclick="closePopup()">Fechar</button>
           `;
 
-          popupContainer.appendChild(popupContent);
-          document.body.appendChild(popupContainer);
+      popupContainer.appendChild(popupContent);
+      document.body.appendChild(popupContainer);
 
-          // Show the popup with a smooth fade-in effect
-          setTimeout(() => {
-            popupContainer.style.display = 'flex';
-            setTimeout(() => {
-              popupContent.style.opacity = '1';
-            }, 10);
-          }, 10);
-        }
+      // Show the popup with a smooth fade-in effect
+      setTimeout(() => {
+        popupContainer.style.display = 'flex';
+        setTimeout(() => {
+          popupContent.style.opacity = '1';
+        }, 10);
+      }, 10);
+    }
 
-        // Função para fechar o pop-up de login
-        function closePopup() {
-          const popupContainer = document.querySelector('.popup-container');
-          const popupContent = document.querySelector('.popup-content');
-          if (popupContainer) {
-            popupContent.style.opacity = '0';
-            setTimeout(() => {
-              document.body.removeChild(popupContainer);
-            }, 200);
-          }
-        }
-        function openPopup() {
-          const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
-        }
-
-        const forms = document.querySelector(".forms"),
-pwShowHide = document.querySelectorAll(".eye-icon"),
-links = document.querySelectorAll(".link");
-
-pwShowHide.forEach(eyeIcon => {
-eyeIcon.addEventListener("click", () => {
-  let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-  
-  pwFields.forEach(password => {
-      if(password.type === "password"){
-          password.type = "text";
-          eyeIcon.classList.replace("bx-hide", "bx-show");
-          return;
+    // Função para fechar o pop-up de login
+    function closePopup() {
+      const popupContainer = document.querySelector('.popup-container');
+      const popupContent = document.querySelector('.popup-content');
+      if (popupContainer) {
+        popupContent.style.opacity = '0';
+        setTimeout(() => {
+          document.body.removeChild(popupContainer);
+        }, 200);
       }
-      password.type = "password";
-      eyeIcon.classList.replace("bx-show", "bx-hide");
-  })
-  
-})
-})      
+    }
+    function openPopup() {
+      const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+    }
 
-links.forEach(link => {
-link.addEventListener("click", e => {
- e.preventDefault(); //preventing form submit
- forms.classList.toggle("show-signup");
-})
-})
+    const forms = document.querySelector(".forms"),
+      pwShowHide = document.querySelectorAll(".eye-icon"),
+      links = document.querySelectorAll(".link");
+
+    pwShowHide.forEach(eyeIcon => {
+      eyeIcon.addEventListener("click", () => {
+        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+        pwFields.forEach(password => {
+          if (password.type === "password") {
+            password.type = "text";
+            eyeIcon.classList.replace("bx-hide", "bx-show");
+            return;
+          }
+          password.type = "password";
+          eyeIcon.classList.replace("bx-show", "bx-hide");
+        })
+
+      })
+    })
+
+    links.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault(); //preventing form submit
+        forms.classList.toggle("show-signup");
+      })
+    })
 
 
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
