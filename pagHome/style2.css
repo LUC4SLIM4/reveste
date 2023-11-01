@@ -28,5 +28,95 @@ footer .social-media {
     text-align: center;
 }
 
+.custom-btn0{
+  background-color: #DBDBCC ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+.custom-btn1{
+  background-color: #E4032F ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn2{
+  background-color:#F28E16 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn3{
+  background-color:#FFCD00 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn4{
+  background-color:#FFEC00 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn5{
+  background-color:#B7CE0D ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn6{
+  background-color:#3F993F ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn7{
+  background-color:#2FAE9E ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn8{
+  background-color:#4376A3 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn9{
+  background-color:#745184 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn10{
+  background-color:#8F9293 ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+
+.custom-btn11{
+  background-color:#C1B28B ;
+  border: none;
+  width: 80px;
+  height: 80px;
+}
+.card{
+  border: none;
+}
+.small{
+  font-size: larger;
+}
+
+
 
 
