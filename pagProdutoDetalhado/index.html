@@ -15,153 +15,163 @@
   </head>
   <body>
 
-     <!--Cabeçalho-->
-    <div class="cabeçalho">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
-                <li class="nav-item m-auto col-11">
-                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    Cadastre-se
-                </button>
-                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!--Cabeçalho-->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+        <li class="nav-item">
+          <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container forms">
+                <div class="container forms">
+                  <!-- Formulário de Login -->
+                  <div class="form login">
+                    <div class="form-content">
+                      <header class="mb-3">Login</header>
+                      <form>
+                        <div class="mb-3">
+                          <label for="loginEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
                         </div>
-                        <div class="modal-body">
-                        <div class="container forms">
-                            <div class="container forms">
-                            <!-- Formulário de Login -->
-                            <div class="form login">
-                                <div class="form-content">
-                                    <header class="mb-3">Login</header>
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="loginEmail" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
-                                        </div>
-                    
-                                        <div class="mb-3">
-                                            <label for="loginPassword" class="form-label">Senha</label>
-                                            <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
-                                            <i class='bx bx-hide eye-icon'></i>
-                                        </div>
-                    
-                                        <div class="mb-3 form-link">
-                                            <a href="#" class="forgot-pass">Esqueceu a senha</a>
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-primary">Login</button>
-                                    </form>
-                    
-                                    <div class="form-link mt-3">
-                                        <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
-                                    </div>
-                                </div>
-                    
-                                <div class="line"></div>
-                    
-                                <div class="media-options">
-                                    <a href="#" class="btn btn-facebook">
-                                        <i class='bx bxl-facebook facebook-icon'></i>
-                                        <span>Entrar com Facebook</span>
-                                    </a>
-                                </div>
-                    
-                                <div class="media-options">
-                                    <a href="#" class="btn btn-google">
-                                        <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
-                                        <span>Entrar com o Google</span>
-                                    </a>
-                                </div>
-                            </div>
-                    
-                            <!-- Formulário de Cadastro -->
-                            <div class="form signup">
-                                <div class="form signup">
-                        <div class="form-content">
-                            <header>Cadastrar</header>
-                            <form action="#">
-                                <div class="field input-field">
-                                    <input type="email" placeholder="Email" class="input">
-                                </div>
-    
-                                <div class="field input-field">
-                                    <input type="password" placeholder="Create password" class="password">
-                                </div>
-    
-                                <div class="field input-field">
-                                    <input type="password" placeholder="Confirm password" class="password">
-                                    <i class='bx bx-hide eye-icon'></i>
-                                </div>
-    
-                                <div class="field button-field">
-                                    <button>Cadastrar</button>
-                                </div>
-                            </form>
-    
-                            <div class="form-link">
-                                <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
-                            </div>
+
+                        <div class="mb-3">
+                          <label for="loginPassword" class="form-label">Senha</label>
+                          <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
+
                         </div>
-    
-                        <div class="line"></div>
-    
-                        <div class="media-options">
-                            <a href="#" class="field facebook">
-                                <i class='bx bxl-facebook facebook-icon'></i>
-                                <span>Entrar com o Facebook</span>
-                            </a>
+
+                        <div class="mb-3 form-link">
+                          <a href="#" class="forgot-pass">Esqueceu a senha</a>
                         </div>
-    
-                        <div class="media-options">
-                            <a href="#" class="field google">
-                                <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
-                                <span>Entrar com o Google</span>
-                            </a>
+
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">Login</button>
+
                         </div>
-    
+
+                        <div class="form-link mt-3">
+                          <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                        </div>
                     </div>
-                            </div>
-                            
-                            
-                </li>
-                <li class="nav-item m-auto col-11">
-                <a class="nav-link" href="#" style="color: #ffffff;">Carrinho</a>
-                </li>
-                <li class="nav-item dropdown m-auto col-11">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">
-                    Coleções
-                </a>  
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="/pagProdutos/index.html">Tintas</a></li>
-                    <li><a class="dropdown-item" href="#">Revestimentos</a></li>
-                    <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
-                </ul>
-                </li>
-            </ul>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark" >
-            <div class="container-fluid m-auto col-11 ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="carrin">
-                    <a href="">
-                        <img src="img/carrinho.png" alt="">
-                    </a>
-                </div>
-                <form class="d-flex pb-0">
-                <input class="form-control me-2 pb-1" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
-                <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
-                </form>
-            </div>
-        </nav>
+
+                    <div class="line"></div>
+
+                    <div class="media-options">
+                      <a href="#" class="btn btn-facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Entrar com Facebook</span>
+                      </a>
+                    </div>
+
+                    <div class="media-options">
+                      <a href="#" class="btn btn-google">
+                        <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                        <span>Entrar com o Google</span>
+                      </a>
+                    </div>
+                    </form>
+                  </div>
+
+                  <!-- Formulário de Cadastro -->
+                  <div class="form signup">
+                    <div class="form signup">
+                      <div class="form-content">
+                        <header>Cadastrar</header>
+                        <form action="#">
+                          <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                          </div>
+
+                          <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password">
+                          </div>
+
+                          <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password">
+
+                          </div>
+
+                          <div class="field button-field">
+                            <button>Cadastrar</button>
+                          </div>
+                        </form>
+
+                        <div class="form-link">
+                          <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                        </div>
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="media-options">
+                        <a href="#" class="field facebook">
+                          <i class='bx bxl-facebook facebook-icon'></i>
+                          <span>Entrar com o Facebook</span>
+                        </a>
+                      </div>
+
+                      <div class="media-options">
+                        <a href="#" class="field google">
+                          <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                          <span>Entrar com o Google</span>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+
+        <li class="nav-itemdropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: #ffffff;">
+            Coleções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/pagProdutos/index.html">Tintas</a></li>
+            <li><a class="dropdown-item" href="#">Revestimentos</a></li>
+            <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="align-self-end">
+        <ul class="navbar-nav">
+        <form class="d-flex">
+          <li class="nav-item mx-3">
+            <a href="" class="nav-link-end text-white">
+              <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+            </a>
+          </li>
+        
+          <input class="form-control me-2" type="search" placeholder="O que você procura?"
+            aria-label="O que você procura?">
+          <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+        </form>
+      </ul>
+    
+      </div>
+
+    </div>
+
+  </nav>
 
     <br>
     <!--Texto-->
@@ -182,7 +192,10 @@
                     Secagem ao toque em 4 horas.
                     </p>
                 <span>A partir de R$ 142,50</span>
-                <a href="">Adicionar ao Carrinho</a>
+                <div>
+                    <a href="">Comprar Agora</a>
+                    <a href="">Adicionar ao Carrinho</a>
+                </div>
          </div>
 
             <!--Imagem-->
