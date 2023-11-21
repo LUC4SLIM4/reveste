@@ -9,7 +9,7 @@ function updateCart() {
     cart.forEach(item => {
         const li = document.createElement('li');
         li.innerHTML = `
-            <img src="${item.imageUrl}" alt="${item.productName}" width="50">
+            <img src="${item.imageUrl}" alt="${item.productName}" width="190">
             ${item.productName} - R$ ${item.price.toFixed(2)} - Quantidade: ${item.quantity}
             <button onclick="increaseQuantity('${item.productName}')"> + </button>
             <button onclick="decreaseQuantity('${item.productName}')"> - </button>
@@ -65,5 +65,18 @@ function checkout() {
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCart();
 }
+
+function addToCart(productName, price, imageUrl) {
+    const item = cart.find(item => item.productName === productName);
+    if (item) {
+        item.quantity++;
+    } else {
+        cart.push({ productName, price, quantity: 1, imageUrl });
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCart();
+}
+
+
 
 updateCart();
