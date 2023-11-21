@@ -11,9 +11,9 @@ function updateCart() {
         li.innerHTML = `
             <img src="${item.imageUrl}" alt="${item.productName}" width="50">
             ${item.productName} - R$ ${item.price.toFixed(2)} - Quantidade: ${item.quantity}
+            <button onclick="increaseQuantity('${item.productName}')"> + </button>
+            <button onclick="decreaseQuantity('${item.productName}')"> - </button>
             <button onclick="removeFromCart('${item.productName}')">Remover</button>
-            <button onclick="increaseQuantity('${item.productName}')">Adicionar mais um</button>
-            <button onclick="decreaseQuantity('${item.productName}')">Diminuir um</button>
         `;
         cartItemsElement.appendChild(li);
     });
