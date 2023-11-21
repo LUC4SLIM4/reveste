@@ -13,7 +13,7 @@ function updateCart() {
             ${item.productName} - R$ ${item.price.toFixed(2)} - Quantidade: ${item.quantity}
             <button onclick="increaseQuantity('${item.productName}')"> + </button>
             <button onclick="decreaseQuantity('${item.productName}')"> - </button>
-            <button onclick="removeFromCart('${item.productName}')">Remover</button>
+            <button class="remove" onclick="removeFromCart('${item.productName}')">Remover</button>
         `;
         cartItemsElement.appendChild(li);
     });
