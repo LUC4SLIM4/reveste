@@ -30,3 +30,14 @@ button.remove {
 button.remove:hover {
     background-color: #FF6347;
 }
+.fa {
+    font-size: 18px;
+}
+
+.fa-trash {
+    color: #FFF;
+}
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
