@@ -10,10 +10,12 @@ function updateCart() {
         const li = document.createElement('li');
         li.innerHTML = `
             <img src="${item.imageUrl}" alt="${item.productName}" width="190">
-            ${item.productName} - R$ ${item.price.toFixed(2)} - Quantidade: ${item.quantity}
-            <button onclick="increaseQuantity('${item.productName}')"> + </button>
-            <button onclick="decreaseQuantity('${item.productName}')"> - </button>
+            ${item.productName} 
+            <button class="b-mais" onclick="increaseQuantity('${item.productName}')"> + </button>
+             ${item.quantity}
+            <button class="b-menos" onclick="decreaseQuantity('${item.productName}')"> - </button>
             <button class="btn btn-danger remove" onclick="removeFromCart('${item.productName}')"><i class="bi bi-trash"></i></button>
+            R$ ${item.price.toFixed(2)} 
             <div class="row my-4">
         <div class="col-3">
         

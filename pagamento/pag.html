@@ -3,13 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="tailwindcss-colors.css">
     <link rel="stylesheet" href="/pagamento/css/style.css">
+    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+ 
     <title>Pagamento</title>
 </head>
 <body>
+
+    <!--Cabeçalho-->
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+            <li class="nav-item">
+              <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+                data-bs-target="#loginModal">Login</button>
+              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
     
+    
+    
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container forms">
+                    <div class="container forms">
+                      <!-- Formulário de Login -->
+                      <div class="form login">
+                        <div class="form-content">
+                          <header class="mb-3">Login</header>
+                          <form>
+                            <div class="mb-3">
+                              <label for="loginEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
+                            </div>
+    
+                            <div class="mb-3">
+                              <label for="loginPassword" class="form-label">Senha</label>
+                              <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
+    
+                            </div>
+    
+                            <div class="mb-3 form-link">
+                              <a href="#" class="forgot-pass">Esqueceu a senha</a>
+                            </div>
+    
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-primary">Login</button>
+    
+                            </div>
+    
+                            <div class="form-link mt-3">
+                              <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                            </div>
+                        </div>
+    
+                       
+    
+                       
+    
+                      <!-- Formulário de Cadastro -->
+                      <div class="form signup">
+                        <div class="form signup">
+                          <div class="form-content">
+                            <header>Cadastrar</header>
+                            <form action="#">
+                              <div class="field input-field">
+                                <input type="email" placeholder="Email" class="input">
+                              </div>
+    
+                              <div class="field input-field">
+                                <input type="password" placeholder="Create password" class="password">
+                              </div>
+    
+                              <div class="field input-field">
+                                <input type="password" placeholder="Confirm password" class="password">
+    
+                              </div>
+    
+                              <div class="field button-field">
+                                <button>Cadastrar</button>
+                              </div>
+                            </form>
+    
+                            <div class="form-link">
+                              <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                            </div>
+                          </div>
+    
+                          <div class="line"></div>
+    
+                          <div class="media-options">
+                            <a href="#" class="field facebook">
+                              <i class='bx bxl-facebook facebook-icon'></i>
+                              <span>Entrar com o Facebook</span>
+                            </a>
+                          </div>
+    
+                          <div class="media-options">
+                            <a href="#" class="field google">
+                              <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                              <span>Entrar com o Google</span>
+                            </a>
+                          </div>
+    
+                        </div>
+                      </div>
+    
+    
+    
+    
+            <li class="nav-itemdropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color: #ffffff;">
+                Coleções
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/coleções/tintas/tintas.html">Tintas</a></li>
+                <li><a class="dropdown-item" href="/coleções/revestimentos/revestimentos.html">Revestimentos</a></li>
+                <li><a class="dropdown-item" href="/coleções/materiais/materiais.html">Materiais para Pintura</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="align-self-end">
+            <ul class="navbar-nav">
+            <form class="d-flex">
+              <li class="nav-item mx-3">
+                <a href="/carrinho/carrinho.html" class="nav-link-end text-white">
+                  <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+                </a>
+              </li>
+            
+              <input class="form-control me-2" type="search" placeholder="O que você procura?"
+                aria-label="O que você procura?">
+              <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+            </form>
+          </ul>
+        
+          </div>
+    
+        </div>
+    
+      </nav>
+    
+
     
     <section class="payment-section">
         <div class="container">
@@ -91,6 +238,90 @@
         </div>
     </section>
 
+    <script>
+        // Função para abrir o pop-up de login
+        function openPopup() {
+          openLoginPopup();
+        }
+    
+        // Função para abrir o pop-up de login
+        function openLoginPopup() {
+          const popupContainer = document.createElement('div');
+          popupContainer.classList.add('popup-container');
+    
+          const popupContent = document.createElement('div');
+          popupContent.classList.add('popup-content');
+          popupContent.innerHTML = `
+                <h2>Login</h2>
+                <form>
+                  <input type="text" placeholder="Usuário" required>
+                  <input type="password" placeholder="Senha" required>
+                  <button type="submit">Login</button>
+                </form>
+                <button class="popup-close" onclick="closePopup()">Fechar</button>
+              `;
+    
+          popupContainer.appendChild(popupContent);
+          document.body.appendChild(popupContainer);
+    
+          // Show the popup with a smooth fade-in effect
+          setTimeout(() => {
+            popupContainer.style.display = 'flex';
+            setTimeout(() => {
+              popupContent.style.opacity = '1';
+            }, 10);
+          }, 10);
+        }
+    
+        // Função para fechar o pop-up de login
+        function closePopup() {
+          const popupContainer = document.querySelector('.popup-container');
+          const popupContent = document.querySelector('.popup-content');
+          if (popupContainer) {
+            popupContent.style.opacity = '0';
+            setTimeout(() => {
+              document.body.removeChild(popupContainer);
+            }, 200);
+          }
+        }
+        function openPopup() {
+          const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+        }
+    
+        const forms = document.querySelector(".forms"),
+          pwShowHide = document.querySelectorAll(".eye-icon"),
+          links = document.querySelectorAll(".link");
+    
+        pwShowHide.forEach(eyeIcon => {
+          eyeIcon.addEventListener("click", () => {
+            let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+    
+            pwFields.forEach(password => {
+              if (password.type === "password") {
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+              }
+              password.type = "password";
+              eyeIcon.classList.replace("bx-show", "bx-hide");
+            })
+    
+          })
+        })
+    
+        links.forEach(link => {
+          link.addEventListener("click", e => {
+            e.preventDefault(); //preventing form submit
+            forms.classList.toggle("show-signup");
+          })
+        })
+    
+      
+      </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
 </body>
 </html>
