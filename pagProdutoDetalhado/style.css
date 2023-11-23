@@ -37,7 +37,15 @@
     width: fit-content;
     padding: 15px 20px;
     border-radius: 5px;
-    
+}
+
+.left-side button{
+    text-decoration: none;
+    color: white;
+    background-color: #212529;
+    width: fit-content;
+    padding: 15px 20px;
+    border-radius: 5px;
 }
 .right-side{
     width: 100%;
