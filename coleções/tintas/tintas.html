@@ -4,48 +4,170 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+    
     <title>RevesteMais Tintas</title>
   </head>
   <body>
-    <!--Navbar-->
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: #ffffff;">Cadastre-se</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#" style="color: #ffffff;">Carrinho</a>
-            </li>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">
-                Coleções
-            </a>  
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Tintas</a></li>
-                <li><a class="dropdown-item" href="#">Revestimentos</a></li>
-                <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
-            </ul>
-            </li>
-        </ul>
-        </div>
+   <!--Cabeçalho-->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+        <li class="nav-item">
+          <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container forms">
+                    <div class="container forms">
+                      <!-- Formulário de Login -->
+                      <div class="form login">
+                        <div class="form-content">
+                          <header class="mb-3">Login</header>
+                          <form>
+                            <div class="mb-3">
+                              <label for="loginEmail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
+                            </div>
+
+                            <div class="mb-3">
+                              <label for="loginPassword" class="form-label">Senha</label>
+                              <input type="password" class="form-control" id="loginPassword"
+                                placeholder="Digite sua senha">
+                              <i class='bx bx-hide eye-icon'></i>
+                            </div>
+
+                            <div class="mb-3 form-link">
+                              <a href="#" class="forgot-pass">Esqueceu a senha</a>
+                            </div>
+
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-primary">Login</button>
+
+                            </div>
+
+                            <div class="form-link mt-3">
+                              <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                            </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="media-options">
+                          <a href="#" class="btn btn-facebook">
+                            <i class='bx bxl-facebook facebook-icon'></i>
+                            <span>Entrar com Facebook</span>
+                          </a>
+                        </div>
+
+                        <div class="media-options">
+                          <a href="#" class="btn btn-google">
+                            <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                            <span>Entrar com o Google</span>
+                          </a>
+                        </div>
+                        </form>
+                      </div>
+
+                      <!-- Formulário de Cadastro -->
+                      <div class="form signup">
+                        <div class="form signup">
+                          <div class="form-content">
+                            <header>Cadastrar</header>
+                            <form action="#">
+                              <div class="field input-field">
+                                <input type="email" placeholder="Email" class="input">
+                              </div>
+
+                              <div class="field input-field">
+                                <input type="password" placeholder="Create password" class="password">
+                              </div>
+
+                              <div class="field input-field">
+                                <input type="password" placeholder="Confirm password" class="password">
+                                <i class='bx bx-hide eye-icon'></i>
+                              </div>
+
+                              <div class="field button-field">
+                                <button>Cadastrar</button>
+                              </div>
+                            </form>
+
+                            <div class="form-link">
+                              <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                            </div>
+                          </div>
+
+                          <div class="line"></div>
+
+                          <div class="media-options">
+                            <a href="#" class="field facebook">
+                              <i class='bx bxl-facebook facebook-icon'></i>
+                              <span>Entrar com o Facebook</span>
+                            </a>
+                          </div>
+
+                          <div class="media-options">
+                            <a href="#" class="field google">
+                              <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                              <span>Entrar com o Google</span>
+                            </a>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+
+
+        <li class="nav-itemdropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: #ffffff;">
+            Coleções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/pagProdutos/index.html">Tintas</a></li>
+            <li><a class="dropdown-item" href="#">Revestimentos</a></li>
+            <li><a class="dropdown-item" href="#">Materiais para Pintura</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
-            <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
-            </form>
-        </div>
-    </nav>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <li class="nav-item">
+        <a href="" class="nav-link-classe-especifica text-white">
+          <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+        </a>
+      </li>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="O que você procura?" aria-label="O que você procura?">
+        <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+      </form>
+
+
+    </div>
+
+  </nav>
 
     <br>
     <div style="text-align: center; font-family: 'Courier New', Courier, monospace;">
-        <h1>Tintas</h1>
+        <h1>Nossos Produtos</h1>
     </div>
     <br>
 
@@ -106,9 +228,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                               
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Econômica', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                            
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -131,9 +253,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Econômica Mini', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                               
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -156,9 +278,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                                  <button class="btn btn-outline-secondary" onclick="addToCart('RendeMais', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                               
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -181,9 +303,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                               
+                              <button class="btn btn-outline-secondary" onclick="addToCart('RendeMais Mini', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                                
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -206,15 +328,39 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Standard', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                               
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
                     </div>
                 </div>
-                
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="img/textura.png" alt="">
+                        <div class="card-header">
+                            R$ 89,90
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Texturas</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                              
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Textura', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                              
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
                     <div class="card text-center bg-light">
                         <a href="" class="position-absolute right-0 p-2 text-danger">
@@ -232,9 +378,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Tinta Piso', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                             
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -257,9 +403,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Massa Corrida no Saco', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                                
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -282,9 +428,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Impermeabilizante', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                                
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -307,9 +453,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                               
+                              <button class="btn btn-outline-secondary" onclick="addToCart('Decora Mais', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                             
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -324,17 +470,17 @@
                         </a>
                         <img src="img/barruca sla o nome.png" alt="">
                         <div class="card-header">
-                            R$ 89,90
+                            R$ 52,00
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Barruca Sla o Nome</h5>
+                            <h5 class="card-title">Barrica</h5>
                             <p class="card-text">DecoraMais Descirção blablabla</p>
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                             
+                              <button class="btn btn-outline-secondary" onclick="addToCart('SLA Barruca', 5.99, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button>
+                             
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -357,9 +503,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                              
+                                  <button class="btn btn-outline-secondary" onclick="addToCart('Produto 12', 30.00)">Adicionar ao Carrinho</button>
+                                
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -382,9 +528,9 @@
                         </div>
                         <div class="card-footer">
                             <form class="d-block">
-                                <button class="btn btn-outline-secondary">
-                                    Adicionar ao Carrinho
-                                </button>
+                                
+                                  <button class="btn btn-outline-secondary" onclick="addToCart('Produto 13', 30.00)">Adicionar ao Carrinho</button>
+                                
                             </form>
                             <small class="text-success">Disponível</small>
                         </div>
@@ -422,7 +568,87 @@
         </div>
       </footer>
 
-
+      <script>
+        // Função para abrir o pop-up de login
+        function openPopup() {
+          openLoginPopup();
+        }
+    
+        // Função para abrir o pop-up de login
+        function openLoginPopup() {
+          const popupContainer = document.createElement('div');
+          popupContainer.classList.add('popup-container');
+    
+          const popupContent = document.createElement('div');
+          popupContent.classList.add('popup-content');
+          popupContent.innerHTML = `
+                <h2>Login</h2>
+                <form>
+                  <input type="text" placeholder="Usuário" required>
+                  <input type="password" placeholder="Senha" required>
+                  <button type="submit">Login</button>
+                </form>
+                <button class="popup-close" onclick="closePopup()">Fechar</button>
+              `;
+    
+          popupContainer.appendChild(popupContent);
+          document.body.appendChild(popupContainer);
+    
+          // Show the popup with a smooth fade-in effect
+          setTimeout(() => {
+            popupContainer.style.display = 'flex';
+            setTimeout(() => {
+              popupContent.style.opacity = '1';
+            }, 10);
+          }, 10);
+        }
+    
+        // Função para fechar o pop-up de login
+        function closePopup() {
+          const popupContainer = document.querySelector('.popup-container');
+          const popupContent = document.querySelector('.popup-content');
+          if (popupContainer) {
+            popupContent.style.opacity = '0';
+            setTimeout(() => {
+              document.body.removeChild(popupContainer);
+            }, 200);
+          }
+        }
+        function openPopup() {
+          const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+        }
+    
+        const forms = document.querySelector(".forms"),
+          pwShowHide = document.querySelectorAll(".eye-icon"),
+          links = document.querySelectorAll(".link");
+    
+        pwShowHide.forEach(eyeIcon => {
+          eyeIcon.addEventListener("click", () => {
+            let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+    
+            pwFields.forEach(password => {
+              if (password.type === "password") {
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+              }
+              password.type = "password";
+              eyeIcon.classList.replace("bx-show", "bx-hide");
+            })
+    
+          })
+        })
+    
+        links.forEach(link => {
+          link.addEventListener("click", e => {
+            e.preventDefault(); //preventing form submit
+            forms.classList.toggle("show-signup");
+          })
+        })
+    
+    
+      </script>
+      <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
