@@ -162,13 +162,11 @@
   </nav>
 
 <br><br>
-<div class="m-auto col-11">
-    <h1>Carrinho de Compras</h1>
-    <br><br>
-    <ul id="cart-items">
-    </ul>
-    <p> <span id="total"></span></p>
-    <a href="/pagamento/pag.html"><button onclick="checkout()" class="b-finall">Finalizar Compra</button></a>
+<div id="cart-container">
+  <h2>Carrinho</h2>
+  <div id="cart-items"></div>
+  <h3> <span id="total"></span></h3>
+  <button class="btn btn-success" onclick="checkout()">Finalizar Compra</button>
 </div>
 
   <br><br><br><br>

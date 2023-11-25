@@ -9,25 +9,46 @@ function updateCart() {
     cart.forEach(item => {
         const li = document.createElement('li');
         li.innerHTML = `
-            <img src="${item.imageUrl}" alt="${item.productName}" width="190">
-            ${item.productName} 
+        <div class="cart-item">
+        <button id="clearCartBtn" onclick="clearCart()" style="display: none;"><i class="bi bi-trash"></i> Remover Tudo</button>
+        <img src="${item.imageUrl}" alt="${item.productName}" width="190">
+        ${item.productName}<br>
+        <div class="button-container">
             <button class="b-mais" onclick="increaseQuantity('${item.productName}')"> + </button>
-             ${item.quantity}
+            ${item.quantity}
             <button class="b-menos" onclick="decreaseQuantity('${item.productName}')"> - </button>
-            <button class="btn btn-danger remove" onclick="removeFromCart('${item.productName}')"><i class="bi bi-trash"></i></button>
-            R$ ${item.price.toFixed(2)} 
+            <button class="btn-remove btn-danger remove" onclick="removeFromCart('${item.productName}')"><i class="bi bi-trash"></i></button>
+        </div>
+        <span style="margin-left: 55px;">R$ ${item.price.toFixed(2)}</span> 
             <div class="row my-4">
         <div class="col-3">
         
         </div>
         <div class="col-6">
-        
+       
         </div>
         <div class="col-3">
-        
+       
         </div>
     </div>
         `;
+        var cart = {
+            products: []
+        };
+        
+        window.onload = function() {
+            var clearCartBtn = document.getElementById('clearCartBtn');
+            clearCartBtn.style.display = 'block';
+        }
+        
+        function addToCart(product) {
+            cart.products.push(product);
+        }
+        
+        function clearCart() {
+            cart.products = [];
+        }
+
         cartItemsElement.appendChild(li);
     });
 
@@ -68,17 +89,12 @@ function checkout() {
     updateCart();
 }
 
-function addToCart(productName, price, imageUrl) {
-    const item = cart.find(item => item.productName === productName);
-    if (item) {
-        item.quantity++;
-    } else {
-        cart.push({ productName, price, quantity: 1, imageUrl });
-    }
+updateCart();
+
+// Atribua a função clearCart() ao objeto window para acesso global
+window.clearCart = function() {
+    cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));
     updateCart();
 }
 
-
-
-updateCart();

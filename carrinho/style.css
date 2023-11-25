@@ -1,80 +1,67 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-}
-
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-    
-}
-
-button.remove {
-    background-color: #c20000;
-    border-radius: 300px;
-    margin-right: 40px;
-}
-
-button.remove:hover {
-    background-color: #FF6347;
-    border-radius: 300px;
-}
-.fa {
-    font-size: 18px;
-}
-
-.my-4 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+#cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
 }
 
 #cart-items {
-    list-style-type: none; 
-    padding: 0; 
-}
-
-#cart-items li {
-    padding: 0;
-    margin: 0; 
-}
-
-.b-final{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-   
+    max-height: 400px;
+    overflow-y: auto;
 }
 
 .b-menos{
-    border-radius: 80px;
-    margin-right: 7px;
+    background-color: #28a745;
+    color: white;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.b-menos:hover, .b-mais:hover {
+    background-color: #28a745;
+}
+
+.btn-danger {
     margin-left: 5px;
+    
 }
 
 .b-mais{
-    border-radius: 80px;
-    margin-left: 40px;
-    margin-right: 5px;
+    background-color: #28a745;
+    color: white;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-left: 35px;
+    border-radius: 20px;
+}
+
+.btn-remove{
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+.btn-clear {
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+#clearCartBtn{
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    border-color: red;
+    margin-left: 800px;
 }

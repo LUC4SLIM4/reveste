@@ -37,7 +37,5 @@ function updateCart() {
     });
 
     // Atualiza o elemento do carrinho no DOM
-    document.g
-    etElementById('cart-items').innerHTML = cartItemsHtml;
+    document.getElementById('cart-items').innerHTML = cartItemsHtml;
 }
-
