@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+    <link rel="stylesheet" href="produtos.css">
+    
+    <title>RevesteMais Tintas</title>
+  </head>
+  <body>
+  <!--Cabeçalho-->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+        <li class="nav-item">
+          <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container forms">
+                <div class="container forms">
+                  <!-- Formulário de Login -->
+                  <div class="form login">
+                    <div class="form-content">
+                      <header class="mb-3">Login</header>
+                      <form>
+                        <div class="mb-3">
+                          <label for="loginEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="loginPassword" class="form-label">Senha</label>
+                          <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
+
+                        </div>
+
+                        <div class="mb-3 form-link">
+                          <a href="#" class="forgot-pass">Esqueceu a senha</a>
+                        </div>
+
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">Login</button>
+
+                        </div>
+
+                        <div class="form-link mt-3">
+                          <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                        </div>
+                    </div>
+
+                   
+
+                   
+
+                  <!-- Formulário de Cadastro -->
+                  <div class="form signup">
+                    <div class="form signup">
+                      <div class="form-content">
+                        <header>Cadastrar</header>
+                        <form action="#">
+                          <div class="field input-field">
+                            <input type="email" placeholder="Email" class="input">
+                          </div>
+
+                          <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password">
+                          </div>
+
+                          <div class="field input-field">
+                            <input type="password" placeholder="Confirm password" class="password">
+
+                          </div>
+
+                          <div class="field button-field">
+                            <button>Cadastrar</button>
+                          </div>
+                        </form>
+
+                        <div class="form-link">
+                          <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                        </div>
+                      </div>
+
+                      <div class="line"></div>
+
+                      <div class="media-options">
+                        <a href="#" class="field facebook">
+                          <i class='bx bxl-facebook facebook-icon'></i>
+                          <span>Entrar com o Facebook</span>
+                        </a>
+                      </div>
+
+                      <div class="media-options">
+                        <a href="#" class="field google">
+                          <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                          <span>Entrar com o Google</span>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+
+        <li class="nav-itemdropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: #ffffff;">
+            Coleções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/coleções/tintas/tintas.html">Tintas</a></li>
+            <li><a class="dropdown-item" href="/coleções/revestimentos/revestimentos.html">Revestimentos</a></li>
+            <li><a class="dropdown-item" href="/coleções/materiais/materiais.html">Materiais para Pintura</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="align-self-end">
+        <ul class="navbar-nav">
+        <form class="d-flex">
+          <li class="nav-item mx-3">
+            <a href="/carrinho/carrinho.html" class="nav-link-end text-white">
+              <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+            </a>
+          </li>
+        
+          <input class="form-control me-2" type="search" placeholder="O que você procura?"
+            aria-label="O que você procura?">
+          <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+        </form>
+      </ul>
+    
+      </div>
+
+    </div>
+
+  </nav>
+
+    <br>
+    <div style="text-align: center; font-family: 'Courier New', Courier, monospace;">
+        <h1>Produtos Coral</h1>
+    </div>
+    <br>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <form class="justify-content-center justify-content-md-start mb-3 mb-md-o">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Oque você procura?">
+                            <button class="btn btn-outline-secondary">
+                                Buscar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form class="ml-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option">Ordenar pelo nome</option>
+                                <option">Ordenar pelo menor preço</option>
+                                <option">Ordenar pelo maior preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline-block">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-item">
+                                    <button class="page-link disabled">1</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">2</button>
+                                </li>
+                                <li class="page-item">
+                                    <button class="page-link">3</button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/fundo-nivelador.webp" alt="">
+                        <div class="card-header">
+                            R$ 145,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Fundo Sintético Nivelador Coralit 900ml - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                               
+                              <p> <span id="total"></span></p> <button class="btn btn-outline-secondary" onclick="addToCart('ECONÔMICA (18L)', 145.00, 'https:/i.im.ge/2023/11/22/AcFtLz.economica.png')">Adicionar ao carrinho</button> 
+                            
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/fundo-preparador.png" alt="">
+                        <div class="card-header">
+                            R$ 45,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Fundo Preparador Base Água 18l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('ECONÔMICA MINI (3,6L)', 45.00, 'https:/i.im.ge/2023/11/24/AzbjDJ.mini-economica.png')">Adicionar ao carrinho</button>
+                               
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/galao-rende-muito.png" alt="">
+                        <div class="card-header">
+                            R$ 290,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tinta Acrílica Rende Muito Standard Fosco 3,6l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                                  <button class="btn btn-outline-secondary" onclick="addToCart('RENDEMAIS (18L)', 290.00, 'https:/i.im.ge/2023/11/24/AzbzQ1.rendemais.png')">Adicionar ao carrinho</button>
+                               
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/massa-corrida.webp" alt="">
+                        <div class="card-header">
+                            R$ 65,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Massa Corrida 25kg - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                               
+                              <button class="btn btn-outline-secondary" onclick="addToCart('RENDE MAIS MINI (3,6L)', 125.00, 'https:/i.im.ge/2023/11/24/AzcFqS.mini-rendemais.png')">Adicionar ao carrinho</button>
+                                
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/resina-impermeabilizante.png" alt="">
+                        <div class="card-header">
+                            R$ 190,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Resina Impermeabilizante Proteção Sol & Chuva 18L - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('STANDARD (18L)', 190.00, 'https:/i.im.ge/2023/11/24/AzgGcG.standard.png')">Adicionar ao carrinho</button>
+                               
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/rende-muito-fosco.png" alt="">
+                        <div class="card-header">
+                            R$ 125,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tinta Acrílica Rende Muito Standard Fosco 18l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                              
+                              <button class="btn btn-outline-secondary" onclick="addToCart('PEDRAS NATURAIS (30KG)', 125.00, 'https:/i.im.ge/2023/11/24/Az810K.textura.png')">Adicionar ao carrinho</button>
+                              
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/rende-muito.png" alt="">
+                        <div class="card-header">
+                            R$ 260,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tinta Acrílica Rende Muito Standard Fosco 16l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('PISOS E QUADRAS (18L)', 260.00, 'https:/i.im.ge/2023/11/24/Az8hrC.pisos-e-quadras.png')">Adicionar ao carrinho</button>
+                             
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/Selador.png" alt="">
+                        <div class="card-header">
+                            R$ 47,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Selador Acrílico 18l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('MASSA CORRIDA (SACO) 25KG', 47.00, 'https:/i.im.ge/2023/11/24/Az8YIx.massa.png')">Adicionar ao carrinho</button>
+                                
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/Super-lavavel.png" alt="">
+                        <div class="card-header">
+                            R$ 210,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tinta Acrílica Super Lavável Premium Eggshell - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                                
+                              <button class="btn btn-outline-secondary" onclick="addToCart('IMPERMEABILIZANTE (12L)', 210.00, 'https:/i.im.ge/2023/11/24/AzRUqJ.impermeabilizante.png')">Adicionar ao carrinho</button>
+                                
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/Verniz.png" alt="">
+                        <div class="card-header">
+                            R$ 390,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Verniz Acrilico 18l - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                               
+                              <button class="btn btn-outline-secondary" onclick="addToCart('DECORA MAIS (18L)', 390.00, 'https:/i.im.ge/2023/11/24/AzRysh.decoramais-premium.png')">Adicionar ao carrinho</button>
+                             
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/Esmalte-Acetinado.png" alt="">
+                        <div class="card-header">
+                            R$ 52,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Esmalte Sintético Premium Brilhante Seca Rápido Coralit 3L - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                             
+                              <button class="btn btn-outline-secondary" onclick="addToCart('MASSA CORRIDA (BARRICA 25KG)', 52.00, 'https:/i.im.ge/2023/11/24/AzRgUp.barruca-sla-o-nome.png')">Adicionar ao carrinho</button>
+                             
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        <img src="/ProdCoral/img/Esmalte.webp" alt="">
+                        <div class="card-header">
+                            R$ 490,00
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Esmalte Coralit Secagem Rápida Brilhante 3,6L - Coral</h5>
+                            <p class="card-text">DecoraMais Descirção blablabla</p>
+                        </div>
+                        <div class="card-footer">
+                            <form class="d-block">
+                              
+                                  <button class="btn btn-outline-secondary" onclick="addToCart('ACETINADO (18L)', 490.00, 'https:/i.im.ge/2023/11/24/AzYwwq.acetinado.png')">Adicionar ao Carrinho</button>
+                                
+                            </form>
+                            <small class="text-success">Disponível</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 d-flex align-items-stretch">
+                    <div class="card text-center bg-light">
+                        <a href="" class="position-absolute right-0 p-2 text-danger">
+                            <svg class="bi" width="24" height="24" fill="currentColor">
+                                <use xlink:href="/bi.svg#suit-heart" />
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <br><br>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+      <br>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p>Copyright &copy; 2023</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        // Função para abrir o pop-up de login
+        function openPopup() {
+          openLoginPopup();
+        }
+    
+        // Função para abrir o pop-up de login
+        function openLoginPopup() {
+          const popupContainer = document.createElement('div');
+          popupContainer.classList.add('popup-container');
+    
+          const popupContent = document.createElement('div');
+          popupContent.classList.add('popup-content');
+          popupContent.innerHTML = `
+                <h2>Login</h2>
+                <form>
+                  <input type="text" placeholder="Usuário" required>
+                  <input type="password" placeholder="Senha" required>
+                  <button type="submit">Login</button>
+                </form>
+                <button class="popup-close" onclick="closePopup()">Fechar</button>
+              `;
+    
+          popupContainer.appendChild(popupContent);
+          document.body.appendChild(popupContainer);
+    
+          // Show the popup with a smooth fade-in effect
+          setTimeout(() => {
+            popupContainer.style.display = 'flex';
+            setTimeout(() => {
+              popupContent.style.opacity = '1';
+            }, 10);
+          }, 10);
+        }
+    
+        // Função para fechar o pop-up de login
+        function closePopup() {
+          const popupContainer = document.querySelector('.popup-container');
+          const popupContent = document.querySelector('.popup-content');
+          if (popupContainer) {
+            popupContent.style.opacity = '0';
+            setTimeout(() => {
+              document.body.removeChild(popupContainer);
+            }, 200);
+          }
+        }
+        function openPopup() {
+          const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+        }
+    
+        const forms = document.querySelector(".forms"),
+          pwShowHide = document.querySelectorAll(".eye-icon"),
+          links = document.querySelectorAll(".link");
+    
+        pwShowHide.forEach(eyeIcon => {
+          eyeIcon.addEventListener("click", () => {
+            let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+    
+            pwFields.forEach(password => {
+              if (password.type === "password") {
+                password.type = "text";
+                eyeIcon.classList.replace("bx-hide", "bx-show");
+                return;
+              }
+              password.type = "password";
+              eyeIcon.classList.replace("bx-show", "bx-hide");
+            })
+    
+          })
+        })
+    
+        links.forEach(link => {
+          link.addEventListener("click", e => {
+            e.preventDefault(); //preventing form submit
+            forms.classList.toggle("show-signup");
+          })
+        })
+    
+    
+      </script>
+      <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
