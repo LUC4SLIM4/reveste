@@ -15,6 +15,8 @@ function addToCart(productName, price, imageUrl) {
 
     // Armazena o carrinho atualizado no localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    event.preventDefault();
 }
 
 function updateCart() {
