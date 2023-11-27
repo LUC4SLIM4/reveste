@@ -1,262 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="tailwindcss-colors.css">
-    <link rel="stylesheet" href="/pagamento/css/style.css">
-    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
- 
-    <title>Pagamento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="tailwindcss-colors.css">
+  <link rel="stylesheet" href="/pagamento/css/style.css">
+  <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>Pagamento</title>
 </head>
+
 <body>
 
-    <!--Cabeçalho-->
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
-            <li class="nav-item">
-              <button type="button" class="login btn btn-link" data-bs-toggle="modal"
-                data-bs-target="#loginModal">Login</button>
-              <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-    
-    
-    
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="container forms">
-                    <div class="container forms">
-                      <!-- Formulário de Login -->
-                      <div class="form login">
-                        <div class="form-content">
-                          <header class="mb-3">Login</header>
-                          <form>
-                            <div class="mb-3">
-                              <label for="loginEmail" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
-                            </div>
-    
-                            <div class="mb-3">
-                              <label for="loginPassword" class="form-label">Senha</label>
-                              <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
-    
-                            </div>
-    
-                            <div class="mb-3 form-link">
-                              <a href="#" class="forgot-pass">Esqueceu a senha</a>
-                            </div>
-    
-                            <div class="text-center">
-                              <button type="submit" class="btn btn-primary">Login</button>
-    
-                            </div>
-    
-                            <div class="form-link mt-3">
-                              <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
-                            </div>
-                        </div>
-    
-                       
-    
-                       
-    
-                      <!-- Formulário de Cadastro -->
-                      <div class="form signup">
-                        <div class="form signup">
-                          <div class="form-content">
-                            <header>Cadastrar</header>
-                            <form action="#">
-                              <div class="field input-field">
-                                <input type="email" placeholder="Email" class="input">
-                              </div>
-    
-                              <div class="field input-field">
-                                <input type="password" placeholder="Create password" class="password">
-                              </div>
-    
-                              <div class="field input-field">
-                                <input type="password" placeholder="Confirm password" class="password">
-    
-                              </div>
-    
-                              <div class="field button-field">
-                                <button>Cadastrar</button>
-                              </div>
-                            </form>
-    
-                            <div class="form-link">
-                              <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
-                            </div>
-                          </div>
-    
-                          <div class="line"></div>
-    
-                          <div class="media-options">
-                            <a href="#" class="field facebook">
-                              <i class='bx bxl-facebook facebook-icon'></i>
-                              <span>Entrar com o Facebook</span>
-                            </a>
-                          </div>
-    
-                          <div class="media-options">
-                            <a href="#" class="field google">
-                              <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
-                              <span>Entrar com o Google</span>
-                            </a>
-                          </div>
-    
-                        </div>
-                      </div>
-    
-    
-    
-    
-            <li class="nav-itemdropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false" style="color: #ffffff;">
-                Coleções
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/coleções/tintas/tintas.html">Tintas</a></li>
-                <li><a class="dropdown-item" href="/coleções/revestimentos/revestimentos.html">Revestimentos</a></li>
-                <li><a class="dropdown-item" href="/coleções/materiais/materiais.html">Materiais para Pintura</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="align-self-end">
-            <ul class="navbar-nav">
-            <form class="d-flex">
-              <li class="nav-item mx-1">
-                <a href="/pagHome/index.html">
-                  <img src="/pagHome/img/icone-home.png" alt="" width="36" height="34">
-                </a>
-              </li>
-              <li class="nav-item mx-3">
-                <a href="/carrinho/carrinho.html" class="nav-link-end text-white">
-                  <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
-                </a>
-              </li>
-            
-              <input class="form-control me-2" type="search" placeholder="O que você procura?"
-                aria-label="O que você procura?">
-              <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
-            </form>
-          </ul>
-        
-          </div>
-    
-        </div>
-    
-      </nav>
-    
+  <!--Cabeçalho-->
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
+        <li class="nav-item">
+          <button type="button" class="login btn btn-link" data-bs-toggle="modal"
+            data-bs-target="#loginModal">Login</button>
+          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
 
-    
-    <section class="payment-section">
-        <div class="container">
-            <div class="payment-wrapper">
-                <div class="payment-left">
-                    <div class="payment-header">
-                        <div class="payment-header-icon"><i class="ri-flashlight-fill"></i></div>
-                        <div class="payment-header-title">Método de Pagamento</div>
-                        <p class="payment-header-description">Escolha a sua forma de pagamento</p>
-                    </div>
-                    <div class="payment-content">
-                        <div class="payment-body">
-                            <div class="payment-plan">
-                                <div class="payment-plan-type">%</div>
-                                <div class="payment-plan-info">
-                                    <div class="payment-plan-info-name">Cupom de desconto</div>
-                                    <div class="payment-plan-info-price"></div>
-                                </div>
-                                <a href="#" class="payment-plan-change">Mudar</a>
-                            </div>
-                            <div class="payment-summary">
-                                <div class="payment-summary-item">
-                                    <div class="payment-summary-name">Total</div>
-                                    <div class="payment-summary-price">$150,00</div>
-                                </div>
-                                <div class="payment-summary-item">
-                                    <div class="payment-summary-name">Desconto - 20%</div>
-                                    <div class="payment-summary-price">-$30,00</div>
-                                </div>
-                                <div class="payment-summary-divider"></div>
-                                <div class="payment-summary-item payment-summary-total">
-                                    <div class="payment-summary-name">Total</div>
-                                    <div class="payment-summary-price">$120,00</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment-right">
-                    <form action="" class="payment-form">
-                        <h1 class="payment-title">Detalhes do Pagamento</h1>
-                        <div class="payment-method">
-                            <input type="radio" name="payment-method" id="method-1" checked>
-                            <label for="method-1" class="payment-method-item">
-                                <img src="imagens/visa.png" alt="">
-                            </label>
-                            <input type="radio" name="payment-method" id="method-2">
-                            <label for="method-2" class="payment-method-item">
-                                <img src="imagens/mastercard.png" alt="">
-                            </label>
-                            <input type="radio" name="payment-method" id="method-3">
-                            <label for="method-3" class="payment-method-item">
-                                <img src="imagens/paypal.png" alt="">
-                            </label>
-                            <input type="radio" name="payment-method" id="method-4">
-                        </div>
-                        <div class="payment-form-group">
-                            <input type="email" placeholder=" " class="payment-form-control" id="email">
-                            <label for="email" class="payment-form-label payment-form-label-required">E-mail </label>
-                        </div>
-                        <div class="payment-form-group">
-                            <input type="text" placeholder=" " class="payment-form-control" id="card-number">
-                            <label for="card-number" class="payment-form-label payment-form-label-required">Número do Cartão</label>
-                        </div>
-                        <div class="payment-form-group-flex">
-                            <div class="payment-form-group">
-                                <input type="date" placeholder=" " class="payment-form-control" id="expiry-date">
-                                <label for="expiry-date" class="payment-form-label payment-form-label-required">Data de Expiração</label>
-                            </div>
-                            <div class="payment-form-group">
-                                <input type="text" placeholder=" " class="payment-form-control" id="cvv">
-                                <label for="cvv" class="payment-form-label payment-form-label-required">CVV</label>
-                            </div>
-                        </div>
-                        <button type="submit" class="payment-form-submit-button"><i class="ri-wallet-line"></i> Pagar</button>
-                    </form>
-                </div>
+
+
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-    </section>
+            <div class="modal-body">
+              <div class="container forms">
+                <div class="container forms">
+                  <!-- Formulário de Login -->
+                  <div class="form login">
+                    <div class="form-content">
+                      <header class="mb-3">Login</header>
+                      <form>
+                        <div class="mb-3">
+                          <label for="loginEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="loginEmail" placeholder="Digite seu email">
+                        </div>
 
-    <script>
-        // Função para abrir o pop-up de login
-        function openPopup() {
-          openLoginPopup();
-        }
-    
-        // Função para abrir o pop-up de login
-        function openLoginPopup() {
-          const popupContainer = document.createElement('div');
-          popupContainer.classList.add('popup-container');
-    
-          const popupContent = document.createElement('div');
-          popupContent.classList.add('popup-content');
-          popupContent.innerHTML = `
+                        <div class="mb-3">
+                          <label for="loginPassword" class="form-label">Senha</label>
+                          <input type="password" class="form-control" id="loginPassword" placeholder="Digite sua senha">
+
+                        </div>
+
+                        <div class="mb-3 form-link">
+                          <a href="#" class="forgot-pass">Esqueceu a senha</a>
+                        </div>
+
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">Login</button>
+
+                        </div>
+
+                        <div class="form-link mt-3">
+                          <span>Não possui uma conta? <a href="#" class="link signup-link">Cadastre-se</a></span>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Formulário de Cadastro -->
+                    <div class="form signup">
+                      <div class="form signup">
+                        <div class="form-content">
+                          <header>Cadastrar</header>
+                          <form action="#">
+                            <div class="field input-field">
+                              <input type="email" placeholder="Email" class="input">
+                            </div>
+
+                            <div class="field input-field">
+                              <input type="password" placeholder="Create password" class="password">
+                            </div>
+
+                            <div class="field input-field">
+                              <input type="password" placeholder="Confirm password" class="password">
+
+                            </div>
+
+                            <div class="field button-field">
+                              <button>Cadastrar</button>
+                            </div>
+                          </form>
+
+                          <div class="form-link">
+                            <span>Você já possui uma conta? <a href="#" class="link login-link">Login</a></span>
+                          </div>
+                        </div>
+
+                        <div class="line"></div>
+
+                        <div class="media-options">
+                          <a href="#" class="field facebook">
+                            <i class='bx bxl-facebook facebook-icon'></i>
+                            <span>Entrar com o Facebook</span>
+                          </a>
+                        </div>
+
+                        <div class="media-options">
+                          <a href="#" class="field google">
+                            <img src="/pagHome/cadastro1/images/google.png" alt="" class="google-img">
+                            <span>Entrar com o Google</span>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+
+        <li class="nav-itemdropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: #ffffff;">
+            Coleções
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/coleções/tintas/tintas.html">Tintas</a></li>
+            <li><a class="dropdown-item" href="/coleções/revestimentos/revestimentos.html">Revestimentos</a></li>
+            <li><a class="dropdown-item" href="/coleções/materiais/materiais.html">Materiais para Pintura</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="align-self-end">
+        <ul class="navbar-nav">
+          <form class="d-flex">
+            <li class="nav-item mx-3">
+              <a href="/carrinho/carrinho.html" class="nav-link-end text-white">
+                <img src="/pagHome/img/carrinho.png" alt="" width="40" height="40">
+              </a>
+            </li>
+
+            <input class="form-control me-2" type="search" placeholder="O que você procura?"
+              aria-label="O que você procura?">
+            <button type="button" class="btn btn-outline-secondary">Pesquisar</button>
+          </form>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <div class="container">
+    <div class="payment-method-container">
+      <h1>Formas de Pagamento</h1>
+
+      <div class="payment-methods">
+        <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+        <img src="/pagamento/imagens/master.png" alt="Logo do Cartão de Crédito" width="50">
+
+        <br>
+
+        <br>
+        <input type="radio" id="pix" name="paymentMethod" value="pix">
+        <img src="/pagamento/imagens/pix.png" alt="Logo do PIX" width="60px" height="30px">
+
+        <br><br>
+
+        <div id="pixDetails" class="payment-details">
+         
+        </div>
+
+          <div id="creditCardDetails" class="payment-details">
+            <label for="cardNumber">Número do Cartão:</label>
+            <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
+         
+          <div class="form-group">
+            <label for="expiryDate">Data de Validade:</label>
+            <input type="text" class="form-control" id="expiryDate" name="expiryDate" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" class="form-control" id="cvv" name="cvv" required>
+          </div>
+          <div class="form-group">
+            <label for="cardHolderName">Nome do Titular:</label>
+            <input type="text" class="form-control" id="cardHolderName" name="cardHolderName" required>
+          </div>
+          <div class="form-group">
+            <label for="street">Rua:</label>
+            <input type="text" class="form-control" id="street" name="street" required>
+          </div>
+          <div class="form-group">
+            <label for="city">Cidade:</label>
+            <input type="text" class="form-control" id="city" name="city" required>
+          </div>
+          <div class="form-group">
+            <label for="state">Estado:</label>
+            <input type="text" class="form-control" id="state" name="state" required>
+          </div>
+          <div class="form-group">
+            <label for="zipCode">CEP:</label>
+            <input type="text" class="form-control" id="zipCode" name="zipCode" required>
+          </div>
+          <button id="realizarPagamentoBtn" class="btn btn-primary">Realizar Pagamento</button>
+
+<div id="mensagemPagamento" class="mensagem-sucesso" style="display: none;">
+  Pagamento realizado com sucesso
+</div>
+        </div>
+        
+        
+        
+        <script>
+         
+          function openPopup() {
+            openLoginPopup();
+          }
+
+       
+          function openLoginPopup() {
+            const popupContainer = document.createElement('div');
+            popupContainer.classList.add('popup-container');
+
+            const popupContent = document.createElement('div');
+            popupContent.classList.add('popup-content');
+            popupContent.innerHTML = `
                 <h2>Login</h2>
                 <form>
                   <input type="text" placeholder="Usuário" required>
@@ -265,68 +248,137 @@
                 </form>
                 <button class="popup-close" onclick="closePopup()">Fechar</button>
               `;
-    
-          popupContainer.appendChild(popupContent);
-          document.body.appendChild(popupContainer);
-    
-          // Show the popup with a smooth fade-in effect
-          setTimeout(() => {
-            popupContainer.style.display = 'flex';
-            setTimeout(() => {
-              popupContent.style.opacity = '1';
-            }, 10);
-          }, 10);
-        }
-    
-        // Função para fechar o pop-up de login
-        function closePopup() {
-          const popupContainer = document.querySelector('.popup-container');
-          const popupContent = document.querySelector('.popup-content');
-          if (popupContainer) {
-            popupContent.style.opacity = '0';
-            setTimeout(() => {
-              document.body.removeChild(popupContainer);
-            }, 200);
-          }
-        }
-        function openPopup() {
-          const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
-        }
-    
-        const forms = document.querySelector(".forms"),
-          pwShowHide = document.querySelectorAll(".eye-icon"),
-          links = document.querySelectorAll(".link");
-    
-        pwShowHide.forEach(eyeIcon => {
-          eyeIcon.addEventListener("click", () => {
-            let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-    
-            pwFields.forEach(password => {
-              if (password.type === "password") {
-                password.type = "text";
-                eyeIcon.classList.replace("bx-hide", "bx-show");
-                return;
-              }
-              password.type = "password";
-              eyeIcon.classList.replace("bx-show", "bx-hide");
-            })
-    
-          })
-        })
-    
-        links.forEach(link => {
-          link.addEventListener("click", e => {
-            e.preventDefault(); //preventing form submit
-            forms.classList.toggle("show-signup");
-          })
-        })
-    
-      
-      </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-  </script>
+            popupContainer.appendChild(popupContent);
+            document.body.appendChild(popupContainer);
+
+            setTimeout(() => {
+              popupContainer.style.display = 'flex';
+              setTimeout(() => {
+                popupContent.style.opacity = '1';
+              }, 10);
+            }, 10);
+          }
+
+          function closePopup() {
+            const popupContainer = document.querySelector('.popup-container');
+            const popupContent = document.querySelector('.popup-content');
+            if (popupContainer) {
+              popupContent.style.opacity = '0';
+              setTimeout(() => {
+                document.body.removeChild(popupContainer);
+              }, 200);
+            }
+          }
+          function openPopup() {
+            const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+          }
+
+          const forms = document.querySelector(".forms"),
+            pwShowHide = document.querySelectorAll(".eye-icon"),
+            links = document.querySelectorAll(".link");
+
+          pwShowHide.forEach(eyeIcon => {
+            eyeIcon.addEventListener("click", () => {
+              let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+
+              pwFields.forEach(password => {
+                if (password.type === "password") {
+                  password.type = "text";
+                  eyeIcon.classList.replace("bx-hide", "bx-show");
+                  return;
+                }
+                password.type = "password";
+                eyeIcon.classList.replace("bx-show", "bx-hide");
+              })
+
+            })
+          })
+
+          links.forEach(link => {
+            link.addEventListener("click", e => {
+              e.preventDefault(); 
+              forms.classList.toggle("show-signup");
+            })
+          })
+
+
+          $(document).ready(function () {
+            $('#paymentForm').on('submit', function (e) {
+              e.preventDefault();
+
+          
+              const cardNumber = $('#cardNumber').val();
+              const expiryDate = $('#expiryDate').val();
+              const cvv = $('#cvv').val();
+              const cardHolderName = $('#cardHolderName').val();
+              const street = $('#street').val();
+              const city = $('#city').val();
+              const state = $('#state').val();
+              const zipCode = $('#zipCode').val();
+
+              processPayment(cardNumber, expiryDate, cvv, cardHolderName, street, city, state, zipCode);
+            });
+          });
+
+          function processPayment(cardNumber, expiryDate, cvv, cardHolderName, street, city, state, zipCode) {
+    
+            console.log('Processando pagamento...');
+          }
+
+          document.getElementById('pix').addEventListener('click', function () {
+            var qrCode = document.createElement('img');
+            qrCode.src = '/pagamento/imagens/qrcode.jpg';
+            qrCode.alt = 'QR Code';
+            qrCode.width = '300'; 
+            qrCode.height = '300'; 
+            var timeElapsed = document.createElement('p');
+            timeElapsed.innerText = 'Tempo decorrido: 0s';
+            var countdown;
+
+
+            function startCountdown() {
+              var totalSeconds = 30 * 60;
+              var elapsedSeconds = totalSeconds;
+              countdown = setInterval(function () {
+                elapsedSeconds--;
+                var minutes = Math.floor(elapsedSeconds / 60);
+                var seconds = elapsedSeconds % 60;
+                timeElapsed.innerText = 'Tempo restante: ' + minutes + 'm ' + seconds + 's';
+                if (elapsedSeconds <= 0) {
+                  clearInterval(countdown);
+                }
+              }, 1000);
+            }
+
+            var pixDetails = document.getElementById('pixDetails');
+            pixDetails.innerHTML = '';
+            pixDetails.appendChild(qrCode);
+            pixDetails.appendChild(document.createElement('br'));
+            pixDetails.appendChild(timeElapsed);
+            startCountdown();
+          });
+
+          
+          function realizarPagamento() {
+
+    document.getElementById("mensagemPagamento").style.display = "block";
+    
+    setTimeout(function() {
+      document.getElementById("mensagemPagamento").style.display = "none";
+    }, 3000); 
+  }
+
+  document.getElementById('realizarPagamentoBtn').addEventListener('click', function() {
+    realizarPagamento();
+  });
+        </script>
+
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+          </script>
 </body>
+
 </html>
