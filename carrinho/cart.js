@@ -82,12 +82,7 @@ function decreaseQuantity(productName) {
     updateCart();
 }
 
-function checkout() {
-    alert('Compra finalizada! Total: R$ ' + cart.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2));
-    cart = [];
-    localStorage.setItem('cart', JSON.stringify(cart));
-    updateCart();
-}
+
 
 updateCart();
 
