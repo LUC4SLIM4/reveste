@@ -1,23 +1,21 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
+    <link rel="stylesheet" href="/pagHome/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Prod Det</title>
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="/pagHome/cadastro1/css/style.css">
-  <link rel="stylesheet" href="/pagHome/style2.css">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <title> RevesteMais Tintas </title>
-</head>
-
-<body>
-
-  <!--Cabeçalho-->
+   <!--Cabeçalho-->
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: lef;">
@@ -166,128 +164,125 @@
 
   </nav>
 
-<br><br>
-<div id="cart-container">
-  <h2>Carrinho</h2>
-  <div id="cart-items"></div>
-  <h3> <span id="total"></span></h3>
-  <button class="btn btn-success" onclick="checkout()">Finalizar Compra</button>
-</div>
+    <br>
+    <!--Texto-->
 
-  <br><br><br><br>
+    <main>
+        <div class="cont">
+            <div class="left-side">
+                <h1>CRYSTAL BRILHO</h1>
+                <h1>USO INTERNO E EXTERNO</h1>
+                <h1>25 Kg</h1>
+                <p>Produto destinado para uso
+                    interno e externo,
+                    recomendamos que seja
+                    aplicado uma a duas camadas,
+                    unidade de 25kg possui
+                    rendimento de até 8m² por
+                    demão. Não deve ser diluído.
+                    Secagem ao toque em 4 horas.
+                    </p>
+                <span>A partir de R$ 150,00</span>
+                <div>
+                  <button class="btn btn-outline-secondary">Comprar Agora</button>
+                  <button class="btn btn-outline-secondary" onclick="addToCart('Crystal-Brilho (25kg)', 150.00, 'https:/i.im.ge/2023/11/28/ClnHZ9.barruca-sla-o-nome.png')">Adicionar ao carrinho</button>
+                </div>
+         </div>
 
-  <div class="m-auto" style="text-align: center; font-family:'Courier New', Courier, monospace;">
-    <p>Siga a Reveste Mais</p>
-    <div>
-      <a href="https://wa.me/message/IAF3XRJBKWY3P1" target="_blank"><img src="img/redes/whatsapp.png" alt="wpp"
-          style="max-width: 50px"></a>
-      <a href="https://www.facebook.com/revestemaistintas" target="_blank"><img src="img/redes/facebook.png" alt="face"
-          style="max-width: 50px"></a>
-      <a href="https://www.instagram.com/revestemaistintas/" target="_blank"><img src="img/redes/instagram.png"
-          alt="inst" style="max-width: 50px"></a>
-    </div>
-  </div>
-
-  <br>
-
-  <!--Rodapé-->
-  <footer>
-    <div class="conteiner">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <p>Copyright &copy; 2023</p>
+            <!--Imagem-->
+            <div class="right-side">
+                <div class="img">
+                <img src="/pagProdutoDetalhado/img suvinil/latex.png">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </main>
+    <br>
 
-  <!--script-->
-  <script>
-    // Função para abrir o pop-up de login
-    function openPopup() {
-      openLoginPopup();
-    }
-
-    // Função para abrir o pop-up de login
-    function openLoginPopup() {
-      const popupContainer = document.createElement('div');
-      popupContainer.classList.add('popup-container');
-
-      const popupContent = document.createElement('div');
-      popupContent.classList.add('popup-content');
-      popupContent.innerHTML = `
-            <h2>Login</h2>
-            <form>
-              <input type="text" placeholder="Usuário" required>
-              <input type="password" placeholder="Senha" required>
-              <button type="submit">Login</button>
-            </form>
-            <button class="popup-close" onclick="closePopup()">Fechar</button>
-          `;
-
-      popupContainer.appendChild(popupContent);
-      document.body.appendChild(popupContainer);
-
-      // Show the popup with a smooth fade-in effect
-      setTimeout(() => {
-        popupContainer.style.display = 'flex';
-        setTimeout(() => {
-          popupContent.style.opacity = '1';
-        }, 10);
-      }, 10);
-    }
-
-    // Função para fechar o pop-up de login
-    function closePopup() {
-      const popupContainer = document.querySelector('.popup-container');
-      const popupContent = document.querySelector('.popup-content');
-      if (popupContainer) {
-        popupContent.style.opacity = '0';
-        setTimeout(() => {
-          document.body.removeChild(popupContainer);
-        }, 200);
+    <script>
+      // Função para abrir o pop-up de login
+      function openPopup() {
+        openLoginPopup();
       }
-    }
-    function openPopup() {
-      const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
-    }
-
-    const forms = document.querySelector(".forms"),
-      pwShowHide = document.querySelectorAll(".eye-icon"),
-      links = document.querySelectorAll(".link");
-
-    pwShowHide.forEach(eyeIcon => {
-      eyeIcon.addEventListener("click", () => {
-        let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
-
-        pwFields.forEach(password => {
-          if (password.type === "password") {
-            password.type = "text";
-            eyeIcon.classList.replace("bx-hide", "bx-show");
-            return;
-          }
-          password.type = "password";
-          eyeIcon.classList.replace("bx-show", "bx-hide");
-        })
-
-      })
-    })
-
-    links.forEach(link => {
-      link.addEventListener("click", e => {
-        e.preventDefault(); //preventing form submit
-        forms.classList.toggle("show-signup");
-      })
-    })
-
   
-  </script>
+      // Função para abrir o pop-up de login
+      function openLoginPopup() {
+        const popupContainer = document.createElement('div');
+        popupContainer.classList.add('popup-container');
+  
+        const popupContent = document.createElement('div');
+        popupContent.classList.add('popup-content');
+        popupContent.innerHTML = `
+              <h2>Login</h2>
+              <form>
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+              </form>
+              <button class="popup-close" onclick="closePopup()">Fechar</button>
+            `;
+  
+        popupContainer.appendChild(popupContent);
+        document.body.appendChild(popupContainer);
+  
+        // Show the popup with a smooth fade-in effect
+        setTimeout(() => {
+          popupContainer.style.display = 'flex';
+          setTimeout(() => {
+            popupContent.style.opacity = '1';
+          }, 10);
+        }, 10);
+      }
+  
+      // Função para fechar o pop-up de login
+      function closePopup() {
+        const popupContainer = document.querySelector('.popup-container');
+        const popupContent = document.querySelector('.popup-content');
+        if (popupContainer) {
+          popupContent.style.opacity = '0';
+          setTimeout(() => {
+            document.body.removeChild(popupContainer);
+          }, 200);
+        }
+      }
+      function openPopup() {
+        const newWindow = window.open('popup.html', 'Popup', 'width=500,height=700');
+      }
+  
+      const forms = document.querySelector(".forms"),
+        pwShowHide = document.querySelectorAll(".eye-icon"),
+        links = document.querySelectorAll(".link");
+  
+      pwShowHide.forEach(eyeIcon => {
+        eyeIcon.addEventListener("click", () => {
+          let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+  
+          pwFields.forEach(password => {
+            if (password.type === "password") {
+              password.type = "text";
+              eyeIcon.classList.replace("bx-hide", "bx-show");
+              return;
+            }
+            password.type = "password";
+            eyeIcon.classList.replace("bx-show", "bx-hide");
+          })
+  
+        })
+      })
+  
+      links.forEach(link => {
+        link.addEventListener("click", e => {
+          e.preventDefault(); //preventing form submit
+          forms.classList.toggle("show-signup");
+        })
+      })
+  
+  
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-  </script>
-  <script src="cart.js"></script>
-</body>
+    
 
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
