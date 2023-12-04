@@ -10,6 +10,98 @@
   <link rel="stylesheet" href="/pagHome/style2.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <title> RevesteMais Tintas </title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .button {
+      width: 80px; /* Diminui o tamanho dos botões */
+      height: 80px; /* Diminui o tamanho dos botões */
+      border: none;
+      border-radius: 50%;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .lightgreen {
+      background-color: lightgreen;
+    }
+
+    .darkgreen {
+      background-color: darkgreen;
+    }
+
+    .lightblue {
+      background-color: lightblue;
+    }
+
+    .darkblue {
+      background-color: darkblue;
+    }
+
+    .purple {
+      background-color: purple;
+    }
+
+    .gray {
+      background-color: gray;
+    }
+
+    .brown {
+      background-color: brown;
+    }
+
+    .shade {
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgb(255, 255, 255);
+      margin: 5px;
+    }
+
+    .output {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    .code {
+      font-family: monospace;
+      font-size: 12px;
+      margin: 5px;
+    }
+
+    .copy {
+      font-family: monospace;
+      font-size: 12px;
+      margin: 5px;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -249,95 +341,137 @@
       <br><br><br>
       <small class="small">O tom que eu tenho em mente é...</small>
     </div>
-    <div class="col d-flex justify-content-center align-items-center">
-      <div class=" col btn custom-btn">
-        <button class="btn custom-btn0 mx-2"></button>
-        <button class="btn custom-btn1 mx-2"></button>
-        <button class="btn custom-btn2 mx-2"></button>
-        <button class="btn custom-btn3 mx-2"></button>
-        <button class="btn custom-btn4 mx-2"></button>
-        <button class="btn custom-btn5 mx-2"></button>
-        <button class="btn custom-btn6 mx-2"></button>
-        <button class="btn custom-btn7 mx-2"></button>
-        <button class="btn custom-btn8 mx-2"></button>
-        <button class="btn custom-btn9 mx-2"></button>
-        <button class="btn custom-btn10 mx-2"></button>
-        <button class="btn custom-btn11 mx-2"></button>
-      </div>
+    <div class="container">
+      <button class="button white" onclick="showShades('white')"></button>
+      <button class="button red" onclick="showShades('red')"></button>
+      <button class="button orange" onclick="showShades('orange')"></button>
+      <button class="button yellow" onclick="showShades('yellow')"></button>
+      <button class="button lightgreen" onclick="showShades('lightgreen')"></button>
+      <button class="button darkgreen" onclick="showShades('darkgreen')"></button>
+      <button class="button lightblue" onclick="showShades('lightblue')"></button>
+      <button class="button darkblue" onclick="showShades('darkblue')"></button>
+      <button class="button purple" onclick="showShades('purple')"></button>
+      <button class="button gray" onclick="showShades('gray')"></button>
+      <button class="button brown" onclick="showShades('brown')"></button>
     </div>
-    <br><br>
-
-    <div class="col d-flex justify-content-center align-items-center ">
-      <div class="dropdown mx-5">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          Ambientes
-        </a>
-      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Todos</a></li>
-          <li><a class="dropdown-item" href="#">Quarto</a></li>
-          <li><a class="dropdown-item" href="#">Quaro Infantil</a></li>
-          <li><a class="dropdown-item" href="#">Banheiro</a></li>
-          <li><a class="dropdown-item" href="#">Cozinha</a></li>
-          <li><a class="dropdown-item" href="#">Escritório</a></li>
-          <li><a class="dropdown-item" href="#">Hall de Entrada</a></li>
-          <li><a class="dropdown-item" href="#">Sala de Estar</a></li>
-          <li><a class="dropdown-item" href="#">Sala de Jantar</a></li>
-        </ul>
-      </div>
-      <div class="dropdown mx-5">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          Superfície
-        </a>
-      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Alumínio e Galvanizado</a></li>
-          <li><a class="dropdown-item" href="#">Alvenaria</a></li>
-          <li><a class="dropdown-item" href="#">Azulejos</a></li>
-          <li><a class="dropdown-item" href="#">Blocos de Concreto</a></li>
-          <li><a class="dropdown-item" href="#">Cerâmica</a></li>
-          <li><a class="dropdown-item" href="#">Cimento</a></li>
-          <li><a class="dropdown-item" href="#">Concreto</a></li>
-          <li><a class="dropdown-item" href="#">Gesso</a></li>
-          <li><a class="dropdown-item" href="#">Lajes</a></li>
-          <li><a class="dropdown-item" href="#">Madeira</a></li>
-          <li><a class="dropdown-item" href="#">Metal</a></li>
-          <li><a class="dropdown-item" href="#">Paredes</a></li>
-          <li><a class="dropdown-item" href="#">Piso de Cimento</a></li>
-          <li><a class="dropdown-item" href="#">Preparação de Superfície</a></li>
-          <li><a class="dropdown-item" href="#">Telhados</a></li>
-          <li><a class="dropdown-item" href="#">Teto</a></li>
-          <li><a class="dropdown-item" href="#">Tijolo</a></li>
-          <li><a class="dropdown-item" href="#">Vidros</a></li>
-        </ul>
-      </div>
-    
-    
-      <div class="dropdown mx-5">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          Acabamento
-        </a>
-      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">Todos</a></li>
-          <li><a class="dropdown-item" href="#">Acetinado</a></li>
-          <li><a class="dropdown-item" href="#">Alto Brilho</a></li>
-          <li><a class="dropdown-item" href="#">Brilhante</a></li>
-          <li><a class="dropdown-item" href="#">Fosco</a></li>
-          <li><a class="dropdown-item" href="#">Matte</a></li>
-          <li><a class="dropdown-item" href="#">Perolizado</a></li>
-          <li><a class="dropdown-item" href="#">Semibrilho</a></li>
-          <li><a class="dropdown-item" href="#">Eggshell</a></li>
-        </ul>
-      </div>
+    <div id="output" class="output"></div>
+    <script>
+      // A function that converts a decimal number to a hexadecimal string
+      function decToHex(dec) {
+        let hex = dec.toString(16);
+        if (hex.length == 1) {
+          hex = "0" + hex;
+        }
+        return hex;
+      }
+  
+      // A function that converts a hexadecimal string to a decimal number
+      function hexToDec(hex) {
+        return parseInt(hex, 16);
+      }
+  
+      // A function that returns an array of shades of a given color
+      function getShades(color) {
+        let shades = [];
+        let r, g, b; // The red, green and blue components of the color
+        // Convert the color to hexadecimal format
+        color = color.toLowerCase();
+        if (color == "white") {
+          color = "#ffffff";
+        } else if (color == "red") {
+          color = "#ff0000";
+        } else if (color == "orange") {
+          color = "#ffa500";
+        } else if (color == "yellow") {
+          color = "#ffff00";
+        } else if (color == "lightgreen") {
+          color = "#90ee90";
+        } else if (color == "darkgreen") {
+          color = "#006400";
+        } else if (color == "lightblue") {
+          color = "#add8e6";
+        } else if (color == "darkblue") {
+          color = "#0000ff";
+        } else if (color == "purple") {
+          color = "#800080";
+        } else if (color == "gray") {
+          color = "#808080";
+        } else if (color == "brown") {
+          color = "#a52a2a";
+        } else {
+          // Invalid color
+          return shades;
+        }
+        // Extract the red, green and blue components from the hexadecimal color
+        r = hexToDec(color.slice(1, 3));
+        g = hexToDec(color.slice(3, 5));
+        b = hexToDec(color.slice(5, 7));
+        // Generate 50 shades of the color by changing the brightness
+        for (let i = 0; i < 50; i++) {
+          // Calculate the brightness factor
+          let factor = 1 - i / 50;
+          // Adjust the red, green and blue components by the factor
+          let newR = Math.floor(r * factor);
+          let newG = Math.floor(g * factor);
+          let newB = Math.floor(b * factor);
+          // Convert the new components to hexadecimal format
+          let newHex = "#" + decToHex(newR) + decToHex(newG) + decToHex(newB);
+          // Add the new shade to the array
+          shades.push(newHex);
+        }
+        return shades;
+      }
+  
+      // A function that shows the shades of a given color on the output div
+      function showShades(color) {
+        // Get the output div element
+        let output = document.getElementById("output");
+        // Clear the output div
+        output.innerHTML = "";
+        // Get the shades of the color
+        let shades = getShades(color);
+        // Loop through the shades and create div elements for each shade
+        for (let shade of shades) {
+          // Create a div element with the shade as the background color
+          let shadeDiv = document.createElement("div");
+          shadeDiv.className = "shade";
+          shadeDiv.style.backgroundColor = shade;
+          // Create a span element with the shade code as the text
+          let codeSpan = document.createElement("span");
+          codeSpan.className = "code";
+          codeSpan.textContent = shade;
+          // Create a span element with the copy option as the text
+          let copySpan = document.createElement("span");
+          copySpan.className = "copy";
+          copySpan.textContent = "Copiar";
+          copySpan.setAttribute("data-code", shade); // Store the shade code as an attribute
+          copySpan.onclick = function() { // Add an onclick event handler
+            // Get the shade code from the attribute
+            let code = this.getAttribute("data-code");
+            // Create a temporary input element to copy the code
+            let input = document.createElement("input");
+            input.value = code;
+            document.body.appendChild(input);
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+            // Show a message that the code was copied
+            alert("O código " + code + " foi copiado para a área de transferência.");
+          };
+          // Append the shade div, the code span and the copy span to the output div
+          output.appendChild(shadeDiv);
+          output.appendChild(codeSpan);
+          output.appendChild(copySpan);
+        }
+      }
+    </script>
+    <br><br><br><br>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <p style="text-align: center;">As cores exibidas no site podem variar da realidade. 
+        Recomendamos visitar uma loja próxima para uma visualização mais precisa, se possível.</p>
     </div>
-  </div>
-  <br><br>
-  <div class="text-center">
-    <button type="button" class="btn btn-outline-secondary mx-auto">Continuar ></button>
-  </div>
 
-  <br><br>
+  
   <hr class="m-auto col-11">
   <br><br>
 
